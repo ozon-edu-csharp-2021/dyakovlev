@@ -2,9 +2,14 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <RootNamespace>merchandise_service</RootNamespace>
+        <RootNamespace>MerchandiseService</RootNamespace>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
         <AssemblyName>MerchandiseService</AssemblyName>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
 
 </Project>
