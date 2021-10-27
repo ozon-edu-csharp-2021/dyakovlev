@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+option csharp_namespace = "MerchandiseService.Grpc";
+
+service MerchandiseService {
+  rpc RequestMerch(MerchRequest) returns (MerchResponse);
+  rpc CheckMerchDelivered(MerchDeliveredRequest) returns (MerchDeliveredResponse);
+}
+
+message MerchRequest {
+  MerchRequestEmployeeModel employee = 1;
+  MerchType merch_type = 2;
+  
+}
+
+message MerchRequestEmployeeModel {
+  
+}
+message MerchResponse {
+  repeated MerchItem merch_items = 1;
+  
+}
+
+message MerchItem {
+
+}
+
+message MerchDeliveredRequest {
+  MerchDeliveredEmployeeModel employee = 1;
+  
+}
+
+message MerchDeliveredEmployeeModel {
+  
+}
+
+message MerchDeliveredResponse {
+  bool delivered = 1;
+}
+
+enum MerchType {
+    None = 0;
+    WelcomePack = 1;
+    StarterPack = 2;
+    ConferenceListenerPack = 3;
+    ConferenceSpeakerPack = 4;
+    VeteranPack = 5;
+}

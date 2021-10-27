@@ -6,7 +6,7 @@ namespace MerchandiseService
 {
     public class GlobalExceptionFilter : ExceptionFilterAttribute
     {
-        public void OnException(ExceptionContext context)
+        public override void OnException(ExceptionContext context)
         {
             if (!context.ExceptionHandled)
             {
