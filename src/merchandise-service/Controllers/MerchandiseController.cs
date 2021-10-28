@@ -12,12 +12,14 @@ namespace MerchandiseService
     {
         [Route("request-merch")]
         [ProducesResponseType(typeof(MerchResponse), StatusCodes.Status200OK)]
+        [HttpPost]
         public ActionResult<MerchResponse> RequestMerch(MerchRequest request)
         {
             throw new NotImplementedException();
         }
         
         [Route("check-delivered")]
+        [HttpPost]
         public ActionResult<MerchDeliveredResponse> CheckMerchDelivered(MerchDeliveredRequest request)
         {
             throw new NotImplementedException();
