@@ -10,17 +10,17 @@ namespace MerchandiseService
     [GlobalExceptionFilter]
     public class MerchandiseController : Controller
     {
-        [Route("request-merch")]
+        [Route("employee/{employeeId}/merch/{merchType}")]
         [ProducesResponseType(typeof(MerchResponse), StatusCodes.Status200OK)]
-        [HttpPost]
-        public ActionResult<MerchResponse> RequestMerch(MerchRequest request)
+        [HttpGet]
+        public ActionResult<MerchResponse> RequestMerch(long employeeId, MerchType merchType)
         {
             throw new NotImplementedException();
         }
         
-        [Route("check-delivered")]
-        [HttpPost]
-        public ActionResult<MerchDeliveredResponse> CheckMerchDelivered(MerchDeliveredRequest request)
+        [Route("employee/{employeeId}/merch-history")]
+        [HttpGet]
+        public ActionResult<EmployeeMerchHistoryResponse> GetEmployeeMerchHistory(long employeeId)
         {
             throw new NotImplementedException();
         }

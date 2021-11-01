@@ -10,6 +10,7 @@ namespace MerchandiseService
         {
             builder.ConfigureServices(services =>
             {
+                services.AddGrpc(opts => opts.Interceptors.Add<LoggingInterceptor>());
                 services.AddControllers();
                 services.AddSwaggerGen();
                 services.AddSingleton<IStartupFilter, TerminalStartupFilter>();

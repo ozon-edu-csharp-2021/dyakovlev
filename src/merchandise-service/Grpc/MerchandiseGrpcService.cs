@@ -11,7 +11,7 @@ namespace MerchandiseService.Grpc
             throw new NotImplementedException();
         }
 
-        public override Task<MerchDeliveredResponse> CheckMerchDelivered(MerchDeliveredRequest request, ServerCallContext context)
+        public override Task<EmployeeMerchHistoryResponse> GetEmployeeMerchHistory(EmployeeMerchHistoryRequest request, ServerCallContext context)
         {
             throw new NotImplementedException();
         }

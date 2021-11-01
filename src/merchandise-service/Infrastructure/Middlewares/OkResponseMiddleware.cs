@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.IO;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
 namespace MerchandiseService
@@ -9,13 +10,13 @@ namespace MerchandiseService
         {
         }
 
-        public Task Invoke(HttpContext context)
+        public async Task Invoke(HttpContext context)
         {
             if (!context.Response.HasStarted)
             {
                 context.Response.StatusCode = StatusCodes.Status200OK;
+                await context.Response.WriteAsync("OK");
             }
-            return Task.CompletedTask;
         }
     }
 }

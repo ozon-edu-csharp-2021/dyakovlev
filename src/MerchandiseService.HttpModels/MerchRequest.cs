@@ -1,8 +1,10 @@
-﻿namespace MerchandiseService.HttpModels
+﻿using System.Net.Sockets;
+
+namespace MerchandiseService.HttpModels
 {
     public class MerchRequest
     {
-        public MerchRequestEmployeeModel Employee { get; set; }
+        public long EmployeeId { get; set; }
         
         public MerchType MerchType { get; set; }
     }

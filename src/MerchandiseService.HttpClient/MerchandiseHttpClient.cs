@@ -22,10 +22,10 @@ namespace MerchandiseService.HttpClient
             return await responseMessage.Content.ReadFromJsonAsync<MerchResponse>();
         }
         
-        public async Task<MerchDeliveredResponse> CheckMerchDelivered(MerchDeliveredRequest request, CancellationToken ct)
+        public async Task<EmployeeMerchHistoryResponse> CheckMerchDelivered(EmployeeMerchHistoryRequest request, CancellationToken ct)
         {
             var responseMessage = await _httpClient.PostAsJsonAsync("/api/v1/check-delivered", request, ct);
-            return await responseMessage.Content.ReadFromJsonAsync<MerchDeliveredResponse>();
+            return await responseMessage.Content.ReadFromJsonAsync<EmployeeMerchHistoryResponse>();
         }
     }
 }

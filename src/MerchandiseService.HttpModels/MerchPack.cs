@@ -2,8 +2,8 @@
 
 namespace MerchandiseService.HttpModels
 {
-    public class MerchResponse
+    public class MerchPack
     {
-        public MerchPack MerchPack { get; set; }
+        public IEnumerable<MerchItem> MerchItems { get; set; }
     }
 }
