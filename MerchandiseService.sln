@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchandiseService.HttpMode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchandiseService.HttpClient", "src\MerchandiseService.HttpClient\MerchandiseService.HttpClient.csproj", "{FDCB2AF6-A4E0-4D7E-A732-C3E8865EC1ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchandiseService.Domain", "src\MerchandiseService.Domain\MerchandiseService.Domain.csproj", "{92507FB0-BA6E-4E4E-87CA-E05958D088D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,7 @@ Global
 		{5E62EF15-43BC-4587-BFBD-A06EA4DA1C65} = {46F8EB2A-920A-4399-AA01-AFAF13374777}
 		{F0FE67AE-5B48-4F7C-93C2-77EE85327876} = {46F8EB2A-920A-4399-AA01-AFAF13374777}
 		{FDCB2AF6-A4E0-4D7E-A732-C3E8865EC1ED} = {46F8EB2A-920A-4399-AA01-AFAF13374777}
+		{92507FB0-BA6E-4E4E-87CA-E05958D088D3} = {46F8EB2A-920A-4399-AA01-AFAF13374777}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9C7DD6AB-C175-4953-B2C3-0722223F8239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -51,5 +54,9 @@ Global
 		{FDCB2AF6-A4E0-4D7E-A732-C3E8865EC1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDCB2AF6-A4E0-4D7E-A732-C3E8865EC1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDCB2AF6-A4E0-4D7E-A732-C3E8865EC1ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92507FB0-BA6E-4E4E-87CA-E05958D088D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92507FB0-BA6E-4E4E-87CA-E05958D088D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92507FB0-BA6E-4E4E-87CA-E05958D088D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92507FB0-BA6E-4E4E-87CA-E05958D088D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
