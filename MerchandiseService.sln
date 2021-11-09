@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchandiseService.HttpClie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchandiseService.Domain", "src\MerchandiseService.Domain\MerchandiseService.Domain.csproj", "{92507FB0-BA6E-4E4E-87CA-E05958D088D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchandiseService.Infrastructure", "src\MerchandiseService.Infrastructure\MerchandiseService.Infrastructure.csproj", "{90B90E6D-37CA-49B6-A66E-22100104DCAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchandiseService.Domain.Tests", "tests\MerchandiseService.Domain.Tests\MerchandiseService.Domain.Tests.csproj", "{A6202266-99A7-4B1D-BE60-DF1CE20FE422}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,8 @@ Global
 		{F0FE67AE-5B48-4F7C-93C2-77EE85327876} = {46F8EB2A-920A-4399-AA01-AFAF13374777}
 		{FDCB2AF6-A4E0-4D7E-A732-C3E8865EC1ED} = {46F8EB2A-920A-4399-AA01-AFAF13374777}
 		{92507FB0-BA6E-4E4E-87CA-E05958D088D3} = {46F8EB2A-920A-4399-AA01-AFAF13374777}
+		{90B90E6D-37CA-49B6-A66E-22100104DCAE} = {46F8EB2A-920A-4399-AA01-AFAF13374777}
+		{A6202266-99A7-4B1D-BE60-DF1CE20FE422} = {85CAF657-1F1D-4D0B-AEF0-F517CDD84BCC}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9C7DD6AB-C175-4953-B2C3-0722223F8239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,5 +64,13 @@ Global
 		{92507FB0-BA6E-4E4E-87CA-E05958D088D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92507FB0-BA6E-4E4E-87CA-E05958D088D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92507FB0-BA6E-4E4E-87CA-E05958D088D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B90E6D-37CA-49B6-A66E-22100104DCAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B90E6D-37CA-49B6-A66E-22100104DCAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B90E6D-37CA-49B6-A66E-22100104DCAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B90E6D-37CA-49B6-A66E-22100104DCAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6202266-99A7-4B1D-BE60-DF1CE20FE422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6202266-99A7-4B1D-BE60-DF1CE20FE422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6202266-99A7-4B1D-BE60-DF1CE20FE422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6202266-99A7-4B1D-BE60-DF1CE20FE422}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
