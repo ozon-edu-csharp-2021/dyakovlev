@@ -1,3 +1,5 @@
-﻿/src/merchandise-service/bin/
-/src/merchandise-service/obj/
+﻿/src/**/bin/
+/src/**/obj/
+/tests/**/bin/
+/tests/**/obj/
 .idea
